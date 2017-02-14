@@ -8,3 +8,6 @@ debug:
 
 deploy: 
 	site-deploy LeandroFerreira_*.pdf /var/www/leandrosf.com/data/
+
+clean:
+	rm -f *.pdf
