@@ -1,6 +1,6 @@
 all:
-	xelatex LeandroFerreira_PT.tex >/dev/null
-	xelatex LeandroFerreira_EN.tex >/dev/null
+	xelatex LeandroFerreira_PT.tex & >/dev/null
+	xelatex LeandroFerreira_EN.tex & >/dev/null
 	rm -f *.log *.aux *.out
 
 debug:
