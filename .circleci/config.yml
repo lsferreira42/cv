@@ -1,7 +1,11 @@
 version: 2
 jobs:
  build:
+   docker:
+     - image: vipintm/xelatex
    machine: true
    steps:
      - checkout
+     - setup_remote_docker:
+         docker_layer_caching: true
      - run: docker run --rm -v $(pwd):/data vipintm/xelatex make
