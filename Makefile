@@ -1,6 +1,6 @@
 all:
-	xelatex LeandroFerreira_PT.tex >/dev/null
-	xelatex LeandroFerreira_EN.tex >/dev/null
+	xelatex -interaction=batchmode LeandroFerreira_PT.tex >/dev/null | true
+	xelatex -interaction=batchmode LeandroFerreira_EN.tex >/dev/null | true
 	rm -f *.log *.aux *.out
 
 deploy: 
